@@ -25,8 +25,12 @@ int main(void) {
 
 
     std::shared_ptr<Car> shared = std::make_shared<Car>(2);
+    std::cout << "Is Unique = " << shared.unique() << "\n";
     std::shared_ptr<Car> shared1 = shared;
     std::shared_ptr<Car> shared2 = shared;
+
+    std::cout << "Use Count = " << shared.use_count() << "\n";
+    std::cout << "Is Unique = " << shared.unique() << "\n";
 
     shared->beep();
     shared1->beep();
