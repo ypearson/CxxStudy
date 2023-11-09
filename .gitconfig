@@ -1,0 +1,12 @@
+# ~/personal/.gitconfig.pers
+ 
+[user]
+email = yvan.pearson@gmail.com 
+name = Yvan Pearson 
+ 
+[github]
+user = "ypearson"
+ 
+[core]
+sshCommand = "ssh -i ~/.ssh/yvan_pearson_key"
+
